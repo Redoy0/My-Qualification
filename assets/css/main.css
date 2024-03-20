@@ -1,0 +1,280 @@
+/* Table of Contents
+----------------------------------
+
+0- Global CSS
+1- Heading CSS
+2- Button CSS
+3- Header Area CSS
+4- Home Area CSS
+5- About Area CSS
+6- Qualification Area CSS 
+7- Services Area CSS
+8- Portfolio Area CSS
+9- Testimonials Area CSS
+10- Blog Area CSS
+11- Contact Area CSS
+12- Footer Area CSS
+13- Scroll-Top Area CSS
+
+*/
+
+
+/*--------------------- 0- Global CSS (Start) ---------------------*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*/
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --purple: #BC8CF2;
+    --black: #EFEFEF;
+    --white: #F7F5F2;
+    --grey: #DFDFDE;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+  	        transition: all 0.2s linear;
+}
+
+*::selection{
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background-color: var(--black);
+    font-family: "Space Mono", Arial, serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section{
+    padding: 2rem 5%;
+}
+
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: var(--purple);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--black);
+}
+
+.swiper-pagination-bullet{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50rem;
+    background-color: var(--grey);
+}
+
+.swiper-pagination-bullet-active{
+    width: 3rem;
+    background: var(--purple);
+}
+
+/*--------------------- 0- Global CSS (End) ---------------------*/
+
+
+
+/*--------------------- 1- Heading CSS (Start) ---------------------*/
+.heading{
+    margin-bottom: 2rem;
+}
+
+.heading h2{
+    text-align: center;
+    padding-bottom: 2rem;
+    color:var(--purple);
+    font-size: 4rem;
+}
+
+.heading h2 span{
+    position: relative;
+    z-index: 0;
+    color: black;
+}
+
+.heading h2 span::before{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem; left: 0;
+    z-index: -1;
+    background: var(--purple);
+    height: 0.2rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*--------------------- 1- Heading CSS (End) ---------------------*/
+
+
+
+/*--------------------- 2- Button CSS (Start) ---------------------*/
+
+/*--------------------- 5- About Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 6- Qualification Area CSS (Start) ---------------------*/
+.qualification .box-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.education, .experience{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+        flex: 1 1 40rem;
+}
+
+.experience-item{
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+        flex: 1 1 40rem;
+    padding: 0 3rem 2rem 3rem;
+    border-left: 0.2rem solid var(--purple);
+    margin-left: 2rem;
+}
+
+.experience-item i{
+    position: absolute;
+    top: 0; 
+    left: -2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--white);
+    background:var(--purple);
+}
+
+.experience-item .content{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    border-left: 2rem;
+}
+
+.experience-item span{
+    background: #222;
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 50rem;
+}
+.experience-item .institute{
+    /* background: rgb(126, 240, 215); */
+    color: black;
+    padding: 1.5rem 0rem;
+    font-size: 2.5rem;
+    border-radius: 50rem;
+
+}
+a:link {
+    color: rgb(107, 178, 219);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(107, 178, 219);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.experience-item h3{
+    font-size: 2.5rem;
+    color: black;
+    padding: 2rem 0;
+}
+
+.experience-item p{
+    color: black;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+/*--------------------- 6- Qualification Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 7- Services Area CSS (Start) ---------------------*/
+
+
+/*--------------------- 12- Footer Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 13- Scroll-Top (Start) ---------------------*/
+.scroll-top{
+    position: fixed;
+    bottom: 1rem;
+    right:1rem;
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+    font-weight:lighter;
+    background: var(--black);
+    color: var(--white);
+    border: 0.2rem solid var(--white);
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .scroll-top:hover{
+    background: var(--white);
+    color:var(--black);
+  }
+
+/*--------------------- 13- Scroll-Top (End) ---------------------*/
